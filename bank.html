@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+         
+            <div class="Div-Menu-left">
+                <li>BANK</li>
+            </div>
+             <div class="Div-Menu-right">
+             <li class="icon">  <i class="fa-solid fa-bars"></i></li> 
+             <a href="#karta kredytowa"><li class="credit" > karta kredytowa</li></a>
+             <a href="#kredyt w rachunku bieżącym"><li class="credit" >kredyt w rachunku bieżącym</li></a>
+             <a href="#kredyt ratalny"><li class="credit" >kredyt ratalny</li></a>
+             <a href="#kredyt samochodowy"><li class="credit" >kredyt samochodowy</li></a>
+             <a href="#kredyt gotówkowy"><li class="credit" >kredyt gotówkowy</li></a>
+             <li class="rejestracja" >zarejstruj</li>
+             <li class="logowanie" ><i class="fa-solid fa-lock"></i></i>&nbsp; zaloguj</li>
+             </div>
+        </nav>
+        
+             <div  class="modal-menu-div">
+                <span class="ModalWindowClose2" >&times;</span>
+                <a href="#karta kredytowa"><li class="credit-modal" > karta kredytowa</li></a>
+                 <a href="#kredyt w rachunku bieżącym"><li class="credit-modal" >kredyt w rachunku bieżącym</li></a>
+                 <a href="#kredyt ratalny"><li class="credit-modal" >kredyt ratalny</li></a>
+                 <a href="#kredyt samochodowy"><li class="credit-modal" >kredyt samochodowy</li></a>
+                 <a href="#kredyt gotówkowy"><li class="credit-modal" >kredyt gotówkowy</li></a>
+            </div>
+       
+    <nav>
+        <div class="nav-container">
+            <div id="karta kredytowa"class="nav-content">
+                
+                <div class="conntent-icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="conntent-top">
+                    <p  >karta kredytowa</p>
+                </div>
+                <div class="conntent-bottom">
+                    <p>dodatkowe środki dostępne na osobnym koncie, można z nich korzystać płacąc specjalną kartą</p>
+                </div>
+            </div>
+            <div id="kredyt w rachunku bieżącym" class="nav-content">
+                <div class="conntent-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <div class="conntent-top">
+                    <p >kredyt w rachunku bieżącym</p>
+                </div>
+                <div class="conntent-bottom">
+                    <p>przeznaczony na dowolny cel, uruchamiany w ramach prowadzonego konta osobistego</p>
+                </div>
+            </div>
+            <div id="kredyt ratalny" class="nav-content">
+                <div class="conntent-icon">
+                    <i class="fa-solid fa-percent"></i>
+                </div>
+                <div class="conntent-top">
+                    <p >kredyt ratalny</p>
+                </div>
+                <div class="conntent-bottom">
+                    <p> zaciągany w przypadku dokonywania zakupów na raty</p>
+                </div>
+            </div>
+            <div id="kredyt samochodowy"  class="nav-content">
+                <div class="conntent-icon">
+                    <i class="fa-solid fa-car-side"></i>
+                </div>
+                <div class="conntent-top">
+                    <p >kredyt samochodowy</p>
+                </div>
+                <div class="conntent-bottom">
+                    <p>może zostać przeznaczony wyłącznie na zakup pojazdu</p>
+                </div>
+            </div>
+            <div id="kredyt gotówkowy" class="nav-content">
+                <div class="conntent-icon">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                </div>
+                <div class="conntent-top">
+                    <p>kredyt gotówkowy</p>
+                </div>
+                <div class="conntent-bottom">
+                    <p> może zostać przeznaczony na dowolny cel niezwiązany z prowadzeniem działalności gospodarczej</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+  
+    <nav class="modal-container">
+        <div class="modal-login" >
+            <div class="div-modal" >
+                <span class="ModalWindowClose">&times;</span>
+                <p class="dark-modal-text">Login</p>
+                <input type="text" id="Login" class="lofin" placeholder="Wpisz email">
+                <div class="error-login" ></div>
+                <p class="dark-modal-text">Hasło</p>
+                <input type="text" id="password" class="lofin"  placeholder="Wpisz Hasło">
+                <div class="error-login" ></div>
+                <p class="login"id="width100"  >zaloguj</p>
+                <div class="error-login" ></div>
+            </div>
+        </div>
+        <div class="modal-rejestracja" >
+            <div class="div-modal" >
+                <span class="ModalWindowClose">&times;</span>
+                <p class="dark-modal-text">imie</p>
+                <input type="text" id="Imie" class="rejestracja-input-class-name" placeholder="Wpisz imie">
+                <div class="ErrorBox" ></div>
+                <p class="dark-modal-text">nazwisko</p>
+                <input type="text" id="Nazwisko" class="rejestracja-input-class-name" placeholder="Wpisz nazwisko">
+                <div class="ErrorBox" ></div>
+                <p class="dark-modal-text">email</p>
+                <input type="text" id="email" class="rejestracja-input-class-name" placeholder="Wpisz email">
+                <div class="ErrorBox" ></div>
+                <input type="text" id="email" class="rejestracja-input-class-name" placeholder="Powtórz email">
+                <div class="ErrorBox" ></div>
+                <p class="dark-modal-text">Hasło</p>
+                <input type="text"id="Hasł" class="rejestracja-input-class-name"  placeholder="Wpisz Hasło">
+                <div class="ErrorBox" ></div>
+                <input type="text" id="Hasł" class="rejestracja-input-class-name"  placeholder="Powtórz Hasło">
+                <div class="ErrorBox" ></div>
+                <p class="login"id="width100" >zarejsetruj</p>
+                <div class="ErrorBox" ></div>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <footer>
+        <div class="footer-contener">
+            <div class="footer-top" >
+                <li><i class="fa-solid fa-coins"></i> &nbsp; Kursy walut</li>
+                <li><i class="fa-solid fa-credit-card"></i> &nbsp;Zastrzeż Kartę</li>
+                <li><i class="fa-solid fa-location-dot"></i>&nbsp;Placówki i bankomaty</li>
+                <li><i class="fa-solid fa-phone"></i>&nbsp;Kontakt</li>
+                <li><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;<i class="fa-brands fa-twitter-square"></i>&nbsp;&nbsp;<i class="fa-brands fa-youtube-square"></i></li>
+            </div>
+            <hr>
+            <div class="footer-bottom" >
+                
+                <div>
+                    <p class="footer-bigger">Przydatne linki</p>
+                    <p class="footer-small">Galeria sztuki</p>
+                    <p class="footer-small">Program Rodzina 500+</p>
+                    <p class="footer-small">Strefa seniora</p>
+                    <p class="footer-small">Program Dobry Start</p>
+                    <p class="footer-small">Biuro Maklerskie</p>
+                    <p class="footer-small">Leasing</p>
+                </div>
+                <div>
+                    <p class="footer-bigger">Bankowość elektroniczna</p>
+                    <p class="footer-small">Bank24</p>
+                    <p class="footer-small">BankBiznes</p>
+                    <p class="footer-small">bankowość mobilna</p>
+                    <p class="footer-small">bank pay </p>
+                    <p class="footer-small">bank pay Kids</p>
+                    <p class="footer-small">Kantor</p>
+                </div>
+                <div>
+                    <p class="footer-bigger">Informacje prawne</p>
+                    <p class="footer-small">RODO</p>
+                    <p class="footer-small">Reklamacje</p>
+                    <p class="footer-small">Regulacje UE</p>
+                    <p class="footer-small">Cenniki i Regulaminny</p>
+                    <p class="footer-small">Polityka Prywatności</p>
+                    <p class="footer-small">Informacje dola klientów</p>
+                </div>
+                <div>
+                    <p class="footer-bigger">Komunikacja</p>
+                    <p class="footer-small">infolina: 123 123 123</p>
+                    <p class="footer-small">Aktualności</p>
+                    <p class="footer-small">Biuro prasowe</p>
+                    <p class="footer-small">Kariera</p>
+                    <p class="footer-small">Informacje dla Inwestorów</p>
+                    <p class="footer-small">Analizy ekonomiczne</p>
+                </div>
+                
+            </div>
+            <hr>
+        </div>
+    </footer>
+    <script src="bank_js.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .red{
+
+        }
+
+    </style>
+<body>
+    <div class="container" >
+    imie:
+    <input  type="text" class="nazw">
+    
+
+    
+    nazwisko
+    <input  type="text" class="nazw"><br>
+    
+
+    
+    Pesel
+    <input type="text"><br>
+    
+
+    
+    data urodzenia
+    <input type="text"><br>
+    
+
+   
+    email 
+    <input type="text"><br>
+   
+    Numer telefonu
+    <input type="text"><br>
+   
+</div>
+    <script lang="JavaScript" >
+
+        const input=document.querySelectorAll('.container > input');
+        
+        
+
+            function walidacajain(e){
+               const allErrors = document.querySelectorAll('.red')
+               allErrors.forEach(el => {
+                        el.remove()
+                    });
+                    
+                const regexImieNazwisko = /[aA-zZ]+/g;
+                var found=e.target.value.match(regexImieNazwisko);
+                if(found==e.target.value){
+                    e.target.style.setProperty("border","1px solid green");
+                    e.target.style.setProperty("weight","177px");
+                    e.target.style.setProperty("height","17px");
+                   
+                  
+                    
+                }else{
+                    var create = document.createElement("p");
+                    var createtext =document.createTextNode("treść niepoprawna")
+                    create.style.setProperty("color","red");
+                    create.className="red"
+                    create.appendChild(createtext);
+                    e.target.style.setProperty("border","1px solid red");
+                    e.target.after(create);
+
+                }           
+            }
+            for(var i=0;i<input.length;i++){
+                if(i==0||i==1){
+                    input[i].addEventListener("input" ,function(){
+                        walidacajain(event);
+                });
+            } 
+        }
+        
+    </script>
+</body>
+</html>

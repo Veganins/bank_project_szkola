@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+      <div class="header-container" >
+          <div class="header-container-right" >
+              <p class="cash1">Konto Osobiste</p>
+              <p class="cash11"></p>
+              <div class="div-cash"><z class="big" >123123,</z><z class="small">12</z></div>
+              <p class="cash2" >Dostępne srodki w PLN</p>
+          </div>
+          <div class="header-container-center" >
+              <li class="li-menu">Weź Kredyt</li>
+              <li class="li-menu">Spłać rate</li>
+              <li class="li-menu">Aktuane kredyty</li>
+              <li class="li-menu">Historia rachunku</li>
+          </div>
+          <div class="header-container-left">
+              <p>Wyślij przelew</p>
+          </div>
+      </div>
+  </header>
+  <nav>
+      <div class="take-credit" >
+          <p class="dark-nav-text" id="ilem2" >Ile pieniędzy potrzebujesz?</p><p  class="blue-nav-text" id="wysokosc-poz" >300zł</p>
+          <div class="div-mp"><p class="m" id="minus-range" >-</p> <input type="range" id="range" value="3" min="3" max="200"><p id="plus-range" class="p">+</p></div>
+          <div class="div-nav-text"><p class="grey-nav-text-1" >300 zł</p><p class="grey-nav-text-2" >20 000 zł</p> </div>
+          <p class="dark-nav-text" id="ilem" >Na ile miesięcy?</p>
+           <div class="div-month" ><p class="m" id="minus-month" >-</p> <input type="text"id="month" disabled value="2 miesięcy" > <p id="plus-month" class="p">+</p></div>
+           <div class="div-nav-text"><p class="dark-nav-text" id="text1" >RRSO</p><p class="dark-nav-text" id="text2" >Wysokość raty</p> </div>
+           <div class="div-nav-text"><p class="blue-nav-text" id="text1" >8.19%</p><p class="blue-nav-text" id="text2" >162.28zł</p> </div>
+           <div class="div-nav-text" ><p class="dark-nav-text"id="text3" >Całkowita kwota do zapłaty 324.57 zł</p></div>
+           <div class="div-nav-text" id="wasdasd" > <p class="button-yellow" id="wezporzyczke" >Weź pożyczke</p></div>
+          </div>
+      <div class="sell-credit" >
+          <div class="container">
+              <h2>Spłać raty</h2>
+              <ul class="responsive-table">
+                  <div id="none">
+                <li class="table-header">
+                  <div class="col-1">Data</div>
+                  <div class="col-2">Nazwa kredytu </div>
+                  <div class="col-3">Pozostałe raty</div>
+                  <div class="col-4">do spłaty</div>
+                </li>
+                  </div>
+                <div class="responsive-tables" >
+                  
+              </div>
+              </ul>
+            </div>
+      </div>
+      <div class="current-credit" >
+          <div class="container">
+              <h2>Aktualne kredyty</h2>
+              <ul class="responsive-table">
+                  <div id="none">
+                <li class="table-header">
+                  <div class="col-1">Data</div>
+                  <div class="col-2">Nazwa kredytu </div>
+                  <div class="col-3">Kwota kredytu</div>
+                  <div class="col-4">Postała kowta</div>
+                </li>
+                  </div>
+                  <div class="responsive-tables" >
+
+                  </div>
+              </ul>
+            </div>
+      </div>
+      </div>
+      <div class="history-credit" >
+          <div class="container">
+              <h2>Historia </h2>
+              <ul class="responsive-table">
+                  <div id="none">
+                <li class="table-header">
+                  <div class="col-1">Data</div>
+                  <div class="col-2">Nazwa</div>
+                  <div class="col-3">Kwota</div>
+                  <div class="col-4">Kwota po operacji</div>
+                </li>
+                  </div>
+                  <div class="responsive-tables" ></div>
+                <li class="table-row">
+                  <div class="col-1" data-label="Data">12.12.2041</div>
+                  <div class="col-2" data-label="Nazwa">Spłata raty</div>
+                  <div class="col-3" data-label="Kwota">-$400</div>
+                  <div class="col-4" data-label="Kwota po operacji">$3.500</div>
+                </li>
+                <li class="table-row">
+                  <div class="col-1" data-label="Data">7.12.2041</div>
+                  <div class="col-2" data-label="Nazwa">Spłata raty</div>
+                  <div class="col-3" data-label="Kwota">-$400</div>
+                  <div class="col-4" data-label="Kwota po operacji">$3.900</div>
+                </li>
+              </ul>
+            </div>
+      </div>
+  </nav>
+  <nav class="modal-container">
+    <div class="modal-rata" >
+      <span class="ModalWindowClose">&times;</span>
+      <p class="dark-modal-text">Ilosc</p>
+      <input type="text"  placeholder="Wpisz ilosc rat">
+      <div class="div-month" ><p class="m" >-</p> <input type="text" value="0 " min="3" max="40"> <p class="p">+</p></div> 
+      <p class="splac"id="width100" >spłać</p>
+      
+    </div>
+      <div class="modal-pay" >
+        <div class="modal-div" >
+          <span class="ModalWindowClose">&times;</span>
+          <p class="dark-modal-text">Numer konta odbiorcy</p>
+          <input type="text" placeholder="Wpisz numer konta odbiorcy">
+          <p class="dark-modal-text">Kwota</p>
+          <input type="text"  placeholder="Wpisz kwotę">
+          <p class="dark-modal-text">tytuł</p>
+          <textarea class="tytul"  ></textarea>
+          <p class="grey-modal-text" >0/150</p>
+          <p class="dark-modal-text">Czas realizacji</p>
+          <div class="div-radio-modal" >
+            <div class="radio-div-modal">
+            <input type="radio" class="radio-modal" name="pppp" checked>
+              <div class="radio-left" >
+                <p class="dark-modal-text2" > Standardowy </p>
+                <p class="grey-modal-text" >w tym lub następnym dniu roboczym (naliczne opłaty 1%)</p>
+              </div>
+            </div>
+            <div class="radio-div-modal">
+            <input type="radio" class="radio-modal" name="pppp"> 
+              <div class="radio-right"> 
+                <p class="dark-modal-text2"> Ekspresowy </p>
+                <p class="grey-modal-text" >do 15min (naliczne opłaty 3%)</p>
+              </div>
+            </div>
+        </div>
+        <p class="button-yellow-modal" >Weź przelew</p>
+      </div>
+  </nav>
+  <script src="bank_js2.js"></script>
+</body>
+</html>
